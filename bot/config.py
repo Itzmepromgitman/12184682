@@ -30,15 +30,15 @@ class Config:
                 "API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e"
             )
             self.ARIA2_PORT = config("ARIA2_PORT", default=6800, cast=int)
-            self.BOT_TOKEN = config("BOT_TOKEN")
+            self.BOT_TOKEN = config("BOT_TOKEN", "7527436695:AAFZBQm5cjEkLkF-QX_ZvpGTvDY1j74FOx0")
             self.CACHE_DL = config("CACHE_DL", default=False, cast=bool)
             self.CAP_DECO = config("CAP_DECO", default="◉")
             self.C_LINK = config("C_LINK", default="@ANi_MiNE")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.COMP_MODE = config("COMPATIBILITY_MODE", default=True, cast=bool)
             self.CUSTOM_RENAME = config("CUSTOM_RENAME", default=None)
-            self.DATABASE_URL = config("DATABASE_URL", default=None)
-            self.DBNAME = config("DBNAME", default="ENC")
+            self.DATABASE_URL = config("DATABASE_URL", default="mongodb+srv://itzmeproman:itzmeproman@itzmeproman.lhh0g.mongodb.net/?retryWrites=true&w=majority&appName=itzmeproman")
+            self.DBNAME = config("DBNAME", default="ENa")
             self.DEV = config("DEV", default=0, cast=int)
             self.DL_STUFF = config("DL_STUFF", default=None)
             self.DUMP_CHANNEL = config("DUMP_CHANNEL", default=0, cast=int)
@@ -58,18 +58,18 @@ class Config:
             self.FFMPEG3 = config("FFMPEG3", default=None)
             self.FFMPEG4 = config("FFMPEG4", default=None)
             self.FINISHED_PROGRESS_STR = config("FINISHED_PROGRESS_STR", default="🧡")
-            self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
+            self.FL_CAP = config("FILENAME_AS_CAPTION", default=True, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
             self.FSTICKER = config("FSTICKER", default=None)
             self.LOCK_ON_STARTUP = config("LOCK_ON_STARTUP", default=False, cast=bool)
-            self.LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
+            self.LOG_CHANNEL = config("LOG_CHANNEL", default=-1002180904784, cast=int)
             self.LOGS_IN_CHANNEL = config("LOGS_IN_CHANNEL", default=False, cast=bool)
             self.MI_CAP = config("MI_IN_CAPTION", default=True, cast=bool)
             self.MUX_ARGS = config("MUX_ARGS", default=None)
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
             self.OVR = config("OVR", default=None)
-            self.OWNER = config("OWNER")
+            self.OWNER = config("OWNER", "7361080500")
             self.PAUSE_ON_DL_INFO = config("PODI", default=True, cast=bool)
             self.QDL_TIMEOUT = config("QBIT_DL_TIMEOUT", default=0, cast=int)
             self.QBIT_PORT = config("QBIT_PORT", default=8090, cast=int)
@@ -118,7 +118,7 @@ class Runtime_Config:
         self.display_additional_dl_info = False
         self.docker_deployed = False
         self.e_cancel = {}
-        self.group_enc = False
+        self.group_enc = True
         self.groupenc = []
         self.max_message_length = 4096
         self.only_owner_pm = False
