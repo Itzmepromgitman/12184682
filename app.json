@@ -6,5 +6,11 @@
     "repository": "https://github.com/nubuki-all/tg-encoder",
     "success_url": "https://t.me/Ani_Mine",
     "stack": "container",
-    
+    "env": {
+        "ALWAYS_DEPLOY_LATEST": {
+            "description": "Whether to update on startup",
+            "value": "True",
+            "required": false
+        }
+    }
 }
