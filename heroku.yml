@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile  # Use the Dockerfile to build the container for the web process
 run:
-  worker: python3 run.sh  # Define the command to run your application
+  worker: python3 -m bot  # Define the command to run your application
