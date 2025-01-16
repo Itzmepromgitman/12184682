@@ -119,7 +119,7 @@ class Runtime_Config:
         self.docker_deployed = False
         self.e_cancel = {}
         self.group_enc = True
-        self.groupenc = []
+        self.groupenc = [1]
         self.max_message_length = 4096
         self.only_owner_pm = False
         self.pause_status = 0
