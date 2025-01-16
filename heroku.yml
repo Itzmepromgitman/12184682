@@ -1,0 +1,5 @@
+build:
+  docker:
+    worker: Dockerfile  # Use the Dockerfile to build the container for the web process
+run:
+  worker: python run.sh  # Define the command to run your application
