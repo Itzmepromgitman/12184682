@@ -33,7 +33,7 @@ def update():
     UPSTREAM_REPO = config(
         "UPSTREAM_REPO",
         default="https://github.com/Itzmepromgitman/12184682")
-    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="main")
+    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="720p")
 
     r_filep = Path("filters/Auto-rename.txt")
     rvars = varsgetter(r_filep)
