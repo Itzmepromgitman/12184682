@@ -470,6 +470,8 @@ async def parse(
             file_name2 += codec
         if sor:
             file_name2 += f" [{sor}]"
+        file_name += "720p"
+        file_name2 += "720p"
         file_name += ".mkv"
     except Exception:
         await logger(Exception)
