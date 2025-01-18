@@ -248,7 +248,7 @@ def my_decorator(f):
     def patch_parse(filename, options=None):
         if len(filename.split(".")) > 2:
             root, ext = os.path.splitext(filename)
-            filename = root.replace(".", " ") + ext
+            filename = root.replace(".", " ") + (" 720p") + ext
         if "varyg" in filename.casefold():
             filename = "[VARYG] " + filename
         kwargs = {"filename": filename}
